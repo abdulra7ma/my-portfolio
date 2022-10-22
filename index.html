@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The boring part! -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>My First Portfolio</title>
+    <meta
+      content="Development portfolio of .... "
+      name="description"
+      property="og:description"
+    />
+
+    <!-- Link to the relevant stylesheet -->
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <!-- Load JQuery, as our little script depends on it -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Load our font from Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      data-require="bootstrap-css@3.0.2"
+      data-semver="3.0.2"
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+    />
+    <script
+      data-require="jquery@*"
+      data-semver="2.1.1"
+      src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+    ></script>
+    <script
+      data-require="bootstrap@*"
+      data-semver="3.0.2"
+      src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"
+    ></script>
+
+    <!-- The JS code block has been moved into the index.js file.  -->
+    <script src="/js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- This calls the little script written above. -->
+    <div class="preloader"></div>
+    <nav class="navbar navbar-blue" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Abdulrahman Dawoud</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a href="#projects"
+                >Projects <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="#contact"
+                >Contact<span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <main>
+      <!-- The Intro section begins -->
+      <section id="intro" class="intro">
+        <div class="intro-text">
+          <!-- Seperates the text section from the arrow. -->
+          <div class="Hi">
+            <h1>
+              Hi! 👋 &mdash; My name is <span>Abdulrahman Dawoud</span>, I'm a
+              <span>developer</span> 👨🏻‍💻 located in Bishkek, Kyrkygzstan.
+            </h1>
+            <!-- Insert your text here! -->
+          </div>
+        </div>
+      </section>
+      <!-- Intro section ends -->
+
+      <!-- The portfolio section begins -->
+      <section id="projects" class="projects">
+        <div class="projects-collage">
+          <!-- Project One -->
+          <a class="project-item" target="_blank">
+            <figure class="project-figure">
+              <div class="project-overlay"></div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTb7nZ1uRwzMv82635AOkMXkm_qwdUBq8Iag&usqp=CAU"
+              />
+              <figcaption class="project-text">
+                <h2>Real-Time Chat App</h2>
+                <p>Your message is send!</p>
+                <p class="hidden popUpdesc">
+                  Developed a real-time messaging app that implemented
+                  websockets for backend frontend communication. Users register
+                  by giving a handle, which is unique to every user (a dummy
+                  name). Only the handle will be revealed to other users. So
+                  people are free to choose any handle and hence they stay
+                  anonymous. A member can see other members who are online. They
+                  have an option to go public, which broadcast the message to
+                  all online members in the chat. For private messages, the
+                  sender should first send a request to the other member. Other
+                  members upon accepting the request can have private chat with
+                  them.
+                </p>
+
+                <!-- *********************** -->
+                <!-- END OF HIDDEN ELEMENTS -->
+              </figcaption>
+            </figure>
+          </a>
+          <!-- Project One Ends -->
+
+          <!-- Project Two -->
+          <a class="project-item" target="_blank">
+            <figure class="project-figure">
+              <div class="project-overlay"></div>
+              <img
+                src="https://images.unsplash.com/photo-1481456384069-0effc539ab7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6e82bb43d4428126504304646c8c6ed4&auto=format&fit=crop&w=1050&q=80"
+              />
+              <figcaption class="project-text">
+                <h2>Ticket Booking System</h2>
+                <p>Get that flight right away</p>
+                <p class="hidden popUpdesc">
+                  A central reservation system, also called an airline or
+                  computer reservation system, serves as storage for
+                  flight-related information like schedules, fares and rules for
+                  each booking class, passenger name records (PNRs), e-tickets,
+                  etc. It's also involved in managing booking requests and
+                  ticket issuing.
+                </p>
+                <!-- *********************** -->
+                <!-- END OF HIDDEN ELEMENTS -->
+              </figcaption>
+            </figure>
+          </a>
+          <!-- Project Two Ends -->
+        </div>
+      </section>
+      <!-- Portfolio section ends -->
+
+      <!-- Contact button section begins -->
+      <section id="contact" class="content contact">
+        <div id="form">
+          <h1>Wanna collaborate? </h1>
+          <p>And I'll get to you ASAP</p>
+          <form>
+            <input type="text" placeholder="Your Awesome Name" />
+            <input type="email" placeholder="Your cool email address" />
+            <textarea placeholder="Message here please"> </textarea>
+            <div id="buttonDiv">
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Contact button section ends-->
+
+      <!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
+      <footer>
+        <div class="wrapper">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/abdulrahman-dawoud-415524241/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/abdulra7ma" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Footer section ends -->
+    </main>
+    <!--This section would ONLY appear when an individual project 'box' is clicked, It gives more detail about the project. it contains-- IMAGE OF THE PROJECT, THE PROJECT'S NAME, THE PROJECT FULL DESCRIPTION, GITHUB LINK && PREVIEW LINK -->
+    <div class="popUp">
+      <div class="popUpImg"></div>
+      <div id="popUpText">
+        <h1>Project's Name</h1>
+        <p class="projectDesc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non
+          ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit.
+        </p>
+        <div>
+          <a href="" id="githubLink"></a>
+          <a href="" id="previewLink"></a>
+        </div>
+      </div>
+      <span id="cancelBtn">X</span>
+    </div>
+  </body>
+</html>
